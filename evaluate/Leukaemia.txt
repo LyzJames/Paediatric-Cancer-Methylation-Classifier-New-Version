@@ -1,0 +1,40 @@
+Node: Leukaemia
+Classes: ['Myeloproliferative neoplasm', 'Acute myeloid leukaemia', 'Mixed phenotype acute leukaemia', 'B-lymphoblastic leukaemia', 'Acute undifferentiated leukaemia', 'T-lymphoblastic leukaemia']
+
+=== Train metrics ===
+{
+  "accuracy": 1.0,
+  "log_loss": 0.1198508798284445,
+  "brier_score": 0.004027668772368393
+}
+
+=== Validation metrics ===
+{
+  "accuracy": 0.9090909090909091,
+  "log_loss": 0.2930442748189273,
+  "brier_score": 0.018226027560954483
+}
+
+=== Validation classification report ===
+                                  precision    recall  f1-score   support
+
+         Acute myeloid leukaemia      1.000     0.250     0.400         4
+Acute undifferentiated leukaemia      0.000     0.000     0.000         1
+       B-lymphoblastic leukaemia      1.000     1.000     1.000        38
+ Mixed phenotype acute leukaemia      0.333     1.000     0.500         1
+     Myeloproliferative neoplasm      0.500     1.000     0.667         1
+       T-lymphoblastic leukaemia      0.818     0.900     0.857        10
+
+                        accuracy                          0.909        55
+                       macro avg      0.609     0.692     0.571        55
+                    weighted avg      0.928     0.909     0.897        55
+
+
+=== Validation confusion matrix ===
+rows/cols = child_names in order above
+[[ 1  0  0  0  0  0]
+ [ 1  1  1  0  0  1]
+ [ 0  0  1  0  0  0]
+ [ 0  0  0 38  0  0]
+ [ 0  0  0  0  0  1]
+ [ 0  0  1  0  0  9]]

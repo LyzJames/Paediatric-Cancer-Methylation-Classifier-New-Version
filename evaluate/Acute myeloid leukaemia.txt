@@ -1,0 +1,32 @@
+Node: Acute myeloid leukaemia
+Classes: ['Acute promyelocytic leukaemia', 'Therapy-related acute myeloid leukaemia']
+
+=== Train metrics ===
+{
+  "accuracy": 1.0,
+  "roc_auc": 1.0,
+  "brier_score": 0.05426249719937537
+}
+
+=== Validation metrics ===
+{
+  "accuracy": 1.0,
+  "roc_auc": 1.0,
+  "brier_score": 0.07312469106244283
+}
+
+=== Validation classification report ===
+                                         precision    recall  f1-score   support
+
+          Acute promyelocytic leukaemia      1.000     1.000     1.000         1
+Therapy-related acute myeloid leukaemia      1.000     1.000     1.000         2
+
+                               accuracy                          1.000         3
+                              macro avg      1.000     1.000     1.000         3
+                           weighted avg      1.000     1.000     1.000         3
+
+
+=== Validation confusion matrix ===
+rows/cols = child_names in order above
+[[1 0]
+ [0 2]]
